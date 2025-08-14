@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD's Mart</title>
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <link rel="stylesheet" href="assets/styles/App.css">
+    <link rel="stylesheet" href="assets/styles/res.css">
+    <link rel="stylesheet" href="assets/styles/themed-dark.css">
+    <script src="assets/js/main.js"></script>
+</head>
+<body id="root">
+    <section>
+        <aside>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                    <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2m3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6z"/>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <a href="#">
+                        <li class="active">
+                            <svg aria-label="Home" width="22" height="22" role="img" viewBox="0 0 26 26" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: currentColor; --height: 24px; --width: 24px;"><title>Home</title><path d="M2.25 12.8855V20.7497C2.25 21.8543 3.14543 22.7497 4.25 22.7497H9.25C9.52614 22.7497 9.75 22.5258 9.75 22.2497V17.6822V16.4997C9.75 14.7048 11.2051 13.2497 13 13.2497C14.7949 13.2497 16.25 14.7048 16.25 16.4997V17.6822V22.2497C16.25 22.5258 16.4739 22.7497 16.75 22.7497H21.75C22.8546 22.7497 23.75 21.8543 23.75 20.7497V12.8855C23.75 11.3765 23.0685 9.94814 21.8954 8.99882L16.1454 4.34539C14.3112 2.86094 11.6888 2.86094 9.85455 4.34539L4.10455 8.99882C2.93153 9.94814 2.25 11.3765 2.25 12.8855Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M22 22L20 20" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li>
+                            <svg aria-label="Create" role="img" width="21" height="21" viewBox="0 0 12 12" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x1gaogpn" style="--fill: currentColor; --height: 24px; --width: 24px;"><title>Products</title><path d="M6 2v8m4-4H2" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" onclick="toggleWish()">
+                        <li>
+                            <svg aria-label="Notifications" id="wishlist-heart" width="27" height="27" role="img" fill="transparent" viewBox="0 0 32 32" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: transparent; --height: 30px; --width: 30px;"><title>Cart</title><path d="M5.5 12.8568C5.5 17.224 9.22178 21.5299 15.0332 25.2032C15.3554 25.397 15.7401 25.5909 16 25.5909C16.2703 25.5909 16.655 25.397 16.9668 25.2032C22.7782 21.5299 26.5 17.224 26.5 12.8568C26.5 9.11212 23.8698 6.5 20.4599 6.5C18.4847 6.5 16.9356 7.39792 16 8.74479C15.0851 7.40812 13.5257 6.5 11.5401 6.5C8.14059 6.5 5.5 9.11212 5.5 12.8568Z" stroke="currentColor" stroke-width="2"></path></svg>
+                        </li>
+                    </a>
+                    <a href="#" onclick="toggleDiv()">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" stroke-width="2.5"/>
+                            </svg>
+                            <span id="cart-indicator"></span>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="more">
+                <div class="cover">
+                    <svg aria-label="Profile" width="23" fill="none" height="23" role="img" viewBox="0 0 26 26" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: transparent; --height: 24px; --width: 24px;"><title>Profile</title><circle cx="13" cy="7.25" r="4" stroke="currentColor" stroke-width="2"></circle><path d="M6.26678 23.75H19.744C21.603 23.75 22.5 23.2186 22.5 22.0673C22.5 19.3712 18.8038 15.75 13 15.75C7.19625 15.75 3.5 19.3712 3.5 22.0673C3.5 23.2186 4.39704 23.75 6.26678 23.75Z" stroke="currentColor" stroke-width="2"></path></svg>
+                </div>
+            </div>
+        </aside>
+        <main id="productPage">
+            <div>
+                <header>
+                    <div id="search">
+                        <div class="ic">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                            </svg>
+                        </div>
+                        <input type="text" name="search" id="box-search" autocomplete="off" spellcheck="false" placeholder="Search">
+                    </div>
+                </header>
+                <div class="banner">
+                    <div class="quote">
+                        <h2>Elevate Your Style – <span>Trendy</span> Fashion, Timeless <span>Elegance</span>, and <span>Unmatched</span> Confidence!</h2>
+                        <div class="profiles-views">
+                            <h3><b>500+</b><br><span>Happy Customers</span></h3>
+                        </div>
+                    </div>
+                    <div class="highlight-cards">
+                        <div class="h-card">
+                            <img src="assets/images/pexels-tima-miroshnichenko-5560191.jpg" loading="lazy" alt="">
+                            <div class="overlay">
+                                <div class="top-btns">
+                                    <button>
+                                        <svg aria-label="Notifications" width="22" height="22" role="img" fill="transparent" viewBox="0 0 32 32" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: transparent; --height: 30px; --width: 30px;"><title>Cart</title><path d="M5.5 12.8568C5.5 17.224 9.22178 21.5299 15.0332 25.2032C15.3554 25.397 15.7401 25.5909 16 25.5909C16.2703 25.5909 16.655 25.397 16.9668 25.2032C22.7782 21.5299 26.5 17.224 26.5 12.8568C26.5 9.11212 23.8698 6.5 20.4599 6.5C18.4847 6.5 16.9356 7.39792 16 8.74479C15.0851 7.40812 13.5257 6.5 11.5401 6.5C8.14059 6.5 5.5 9.11212 5.5 12.8568Z" stroke="currentColor" stroke-width="2"></path></svg>
+                                    </button>
+                                    <button>Buy Now</button>
+                                </div>
+                                <div class="btm-txt">
+                                    <h3>Get up to 5% off discounts</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-card">
+                            <img src="assets/images/pexels-tugrulkurnaz-31321344.jpg" alt="" loading="lazy">
+                            <div class="overlay">
+                                <div class="top-btns">
+                                    <button>
+                                        <svg aria-label="Notifications" width="22" height="22" role="img" fill="transparent" viewBox="0 0 32 32" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: transparent; --height: 30px; --width: 30px;"><title>Cart</title><path d="M5.5 12.8568C5.5 17.224 9.22178 21.5299 15.0332 25.2032C15.3554 25.397 15.7401 25.5909 16 25.5909C16.2703 25.5909 16.655 25.397 16.9668 25.2032C22.7782 21.5299 26.5 17.224 26.5 12.8568C26.5 9.11212 23.8698 6.5 20.4599 6.5C18.4847 6.5 16.9356 7.39792 16 8.74479C15.0851 7.40812 13.5257 6.5 11.5401 6.5C8.14059 6.5 5.5 9.11212 5.5 12.8568Z" stroke="currentColor" stroke-width="2"></path></svg>
+                                    </button>
+                                    <button>Buy Now</button>
+                                </div>
+                                <div class="btm-txt">
+                                    <h3>Chic satin cami with black<br> wide-leg trousers and blazer</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-card">
+                            <img src="assets/images/pexels-urfriendlyphotog-31253244.jpg" alt="" loading="lazy">
+                            <div class="overlay">
+                                <div class="top-btns">
+                                    <button>
+                                        <svg aria-label="Notifications" width="22" height="22" role="img" fill="transparent" viewBox="0 0 32 32" class="x1lliihq x135i0dr x2lah0s x1f5funs x1n2onr6 x1bl4301 x3egl4o" style="--fill: transparent; --height: 30px; --width: 30px;"><title>Cart</title><path d="M5.5 12.8568C5.5 17.224 9.22178 21.5299 15.0332 25.2032C15.3554 25.397 15.7401 25.5909 16 25.5909C16.2703 25.5909 16.655 25.397 16.9668 25.2032C22.7782 21.5299 26.5 17.224 26.5 12.8568C26.5 9.11212 23.8698 6.5 20.4599 6.5C18.4847 6.5 16.9356 7.39792 16 8.74479C15.0851 7.40812 13.5257 6.5 11.5401 6.5C8.14059 6.5 5.5 9.11212 5.5 12.8568Z" stroke="currentColor" stroke-width="2"></path></svg>
+                                    </button>
+                                    <button>Buy Now</button>
+                                </div>
+                                <div class="btm-txt">
+                                    <h3>Retro crochet top with ripped <br>flared jeans</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products-list">
+                    <div class="products-brief">
+                        <div>
+                            <h2>All Products</h2>
+                            <p>These products can rotate weekly or based on seasonality and demand.</p>
+                        </div>
+                        <button>Shop more</button>
+                    </div>
+                    <div class="catogories">
+                        <ul>
+                            <li class="filter-item active" data-category="all">All Categories</li>
+                            <li class="filter-item" data-category="mens">Mens</li>
+                            <li class="filter-item" data-category="women">Women</li>
+                            <li class="filter-item" data-category="clothing">Clothing</li>
+                            <li class="filter-item" data-category="shoes">Shoes</li>
+                            <li class="filter-item" data-category="accessories">Accessories</li>
+                            <li class="filter-item" data-category="jewellery">Jewellery</li>
+                        </ul>
+                    </div>
+                    <div class="product-cards" id="products-list"></div>
+                    <div class="product-all active">
+                        <button>See more products</button>
+                    </div>
+                </div>
+            </div>
+            <div id="cart">
+                <a href="#" class="back" onclick="toggleDiv()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                    </svg>
+                    Cancel
+                </a>
+                <h2 class="cart-title">Shopping Cart</h2>
+                <div class="cart-container">
+                    <div class="cart-list">
+                        <h3>Total Items: <b id="cart-count">0</b></h3>
+                        <div id="cart-container" class="cart-items"></div>
+                    </div>
+                    <div class="check-out" id="cart-total-box">
+                        <h3>Total</h3>
+                        <div class="billing">
+                            <div class="bill-info">
+                                <span>Subtotal <a href="#" id="innTxt">(2 Items)</a></span>
+                                <span><b id="cart-total"></b></span>
+                            </div>
+                            <div class="bill-info">
+                                <span>Delivery Fee</span>
+                                <span><b>₹49.87</b></span>
+                            </div>
+                            <div class="bill-info">
+                                <span>Discount</span>
+                                <span class="red"><b>-₹167.18</b></span>
+                            </div>
+                            <div class="bill-info">
+                                <span>GST</span>
+                                <span><b>5%</b></span>
+                            </div>
+                        </div>
+                        <div class="bill-total">
+                            <h4>Total Payable</h4>
+                            <b id="bill-total"></b>
+                        </div>
+                        <button>Checkout</button>
+                    </div>
+                </div>
+            </div>
+            <div id="wishlist-container">
+                <h3 id="ipo">wishlist Items</h3>
+                <div id="w-list-container"></div>
+            </div>
+            <footer>
+                <div class="news-letter">
+                    <div class="txt">
+                        <h3>Sign up to our new & offers</h3>
+                        <p>Be the first to know about exclusive offers, new services, couriers, tools and more!</p>
+                    </div>
+                    <div class="mailBox">
+                        <div class="ic">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-paper-heart" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1.133l.941.502A2 2 0 0 1 16 5.4V14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V5.4a2 2 0 0 1 1.059-1.765L2 3.133zm0 2.267-.47.25A1 1 0 0 0 1 5.4v.817l1 .6zm1 3.15 3.75 2.25L8 8.917l1.25.75L13 7.417V2a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1zm11-.6 1-.6V5.4a1 1 0 0 0-.53-.882L14 4.267zM8 2.982C9.664 1.309 13.825 4.236 8 8 2.175 4.236 6.336 1.31 8 2.982m7 4.401-4.778 2.867L15 13.117zm-.035 6.88L8 10.082l-6.965 4.18A1 1 0 0 0 2 15h12a1 1 0 0 0 .965-.738ZM1 13.116l4.778-2.867L1 7.383v5.734Z"/>
+                            </svg>
+                        </div>
+                        <div class="iBox">
+                            <input type="email" name="email" id="email"  spellcheck="false" autocomplete="off" placeholder="example@email.com">
+                        </div>
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+                <div class="content-box">
+                    <div class="company-details">
+                        <h1>Parcel Monkey</h1>
+                        <p>Technology park <br>8-14 Marie Curies Street<br>09876 Barcelonan</p>
+                    </div>
+                    <div class="sub-details">
+                        <h3>Company</h3>
+                        <a href="#">About us</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Cookie policy</a>
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Acceptable use policy</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                    <div class="sub-details">
+                        <h3>Shipping services</h3>
+                        <a href="#">Ship a package</a>
+                        <a href="#">Track a package</a>
+                        <a href="#">Domestic shipping</a>
+                        <a href="#">International shipping</a>
+                        <a href="#">Bulk shipping</a>
+                        <a href="#">Couriers</a>
+                        <a href="#">Delivery services</a>
+                    </div>
+                    <div class="sub-details">
+                        <h3>Customers</h3>
+                        <a href="#">Log in</a>
+                        <a href="#">Register</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Support hub</a>
+                        <a href="#">Preferences</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <p>copyrights &copy; 2025 all rights reserved.</p>
+                    <p>English (US)</p>
+                </div>
+            </footer>
+        </main>
+    </section>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/wishlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+@keyframes slide-up {
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%); 
+    }
+}
+@keyframes slide-down {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(100%); 
+    }
+}
+@media screen and (max-width: 600px){
+    /*cart*/
+    #cart,
+    #wishlist-container{
+        position: absolute;
+        width: 100%;
+        height: 100dvh;
+        top: 0;
+        padding: 15px;
+        border-radius: 0;
+        padding-bottom: 50px;
+    }
+    #cart .cart-title{
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .cart-container{
+        flex-direction: column;
+    }
+    .cart-list{
+        width: 100%;
+        padding: 0px 0px;
+        border: none;
+    }
+    .cart-item{
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 10px;
+        border: 1px solid var(--dark-grey);
+    }
+    .item-photo{
+        width: 100%;
+        height: 200px;
+    }
+    .item-details{
+        width: 100%;
+    }
+    .item-details p{
+        text-align: left;
+    }
+    .item-total,
+    .remove{
+        padding: 10px 0;
+        height: auto;
+    }
+    .item-total{
+        padding: 10px;
+        width: max-content;
+        align-items: start;
+        justify-content: start;
+    }
+    .quantity-container input{
+        padding: 0;
+    }
+    .check-out{
+        width: 100%;
+        padding: 15px 20px;
+    }
+    #w-list-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #w-list-container .wishlist-item{
+        width: 100%;
+    }
+    a{
+        cursor: default;
+    }
+    #root{
+        width: 100%;
+        height: 100dvh;
+        overflow: unset;
+    }
+    
+    section{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        flex-direction: column-reverse;
+        background-color: var(--primary);
+    }
+    aside{
+        width: 100%;
+        height: 70px;
+        flex-direction: row;
+        background-color: var(--primary);
+    }
+    .logo,
+    .more{
+        display: none;
+    }
+    nav{
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        z-index: 9999;
+        transition: all 300ms ease-in-out;
+        background-color: var(--primary);
+    }
+    nav,
+    nav ul{
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .banner{
+        width: 100%;
+        height: unset;
+        padding: 20px 10px;
+    }
+    .quote{
+        height: 84dvh;
+        padding: 80px 10px;
+        align-items: unset;
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    .quote h2{
+        width: 100%;
+        font-size: 32px;
+    }
+    .highlight-cards{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .h-card,
+    .h-card:first-child{
+        width: 320px;
+        height: 400px;
+    }
+    .products-brief{
+        padding: 10px;
+        flex-direction: column;
+        align-items: start;
+    }
+    .products-brief div h2{
+        margin-bottom: 5px;
+    }
+    .products-brief p{
+        text-align: start;
+    }
+    .products-brief button{
+        display: none;
+    }
+    .catogories{
+        padding: 10px 5px;
+        overflow-x: scroll;
+    }
+    .catogories ul li{
+        width: max-content;
+    }
+    .no-products{
+        font-size: 16px;
+    }
+    .product-cards{
+        flex-direction: column;
+        padding: 20px 10px;
+        gap: 40px;
+    }
+    .card{
+        width: 100%;
+    }
+    .image-container{
+        height: 300px;
+    }
+    .details-tag h3{
+        font-size: 16px;
+        line-height: 2.3;
+    }
+    .details-tag p{
+        font-size: 13px;
+        text-align: start;
+    }
+    .add-to-cart button{
+        font-size: 14px;
+    }
+    .product-all {
+        padding: 10px;
+    }
+    .product-all button{
+        width: 100%;
+    }
+    .news-letter{
+        flex-direction: column;
+        gap: 30px;
+    }
+    footer{
+        padding: 30px 20px;
+        margin-top: 0px;
+    }
+    .txt{
+        width: 100%;
+    }
+    .txt h3, p{
+        text-align: center;
+    }
+    .txt h3{
+        line-height: 2.2;
+    }
+    .mailBox{
+        width: 100%;
+    }
+    .mailBox .ic{
+        width: 50px;
+    }
+    .iBox{
+        width: calc((100% - 50px) - 100px);
+    }
+    .content-box{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        padding: 20px 5px;
+    }
+    .company-details p{
+        text-align: start;
+    }
+    .sub-details h3{
+        font-size: 17px;
+    }
+    .sub-details a{
+        font-size: 15px;
+    }
+    .scroll-down aside{
+        transform: translate3d(0, -100%, 0);
+    }
+
+
+
+}
